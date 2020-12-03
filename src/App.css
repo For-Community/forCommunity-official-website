@@ -4,11 +4,14 @@
 /* ff8e71 */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 body {
   margin: 0;
+  background: black;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .header-logo {
@@ -16,20 +19,22 @@ body {
   align-items: center;
 }
 
-.header-logo h3 {
+.header-logo > h3 {
   margin-left: 10px;
   color: goldenrod;
 }
 
 .header {
-  background-color: #583d72;
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 64px;
   position: sticky;
+  top: 0;
   z-index: 100;
+  background-color: transparent;
 }
 
 .header-link > a {
@@ -40,7 +45,14 @@ body {
 }
 
 .header-link > a:hover {
-  color: #ffba93;
+  color: #52057b;
   transition: 0.5s;
 }
 
+.image-body {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -250px;
+  position: fixed;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
