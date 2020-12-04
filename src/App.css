@@ -29,6 +29,10 @@ body {
   color: azure;
 }
 
+.header-logo i{
+  font-size: 29px;
+}
+
 .header {
   background-color: #2e2e2e;
   color: white;
@@ -49,7 +53,7 @@ body {
 }
 
 .header-link > a:hover {
-  color: #52057b;
+  color: rgb(255, 183, 0);
   transition: 0.5s;
 }
 
@@ -77,20 +81,44 @@ body {
   font-family: Bebas Neue;
 }
 
+.hero-text h4 span{
+  color: whitesmoke;
+}
+
 @media (max-width: 700px){
   .header{
     display: block;
     text-align: center;
     justify-content: center;
-    height: 90px;
+    height: 120px;
   }
 
   .header-logo{
     justify-content: center;
   }
 
+  .header-logo > h3 {
+    font-size: 26px;
+  }
+  
+  .header-logo i{
+    font-size: 25px;
+  }
+
   .hero{
     flex-wrap: wrap;
+  }
+
+  .hero-text{
+    font-size: 55px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .hero-image img{
+    height: 300px;
+    width: 350px;
+    margin-top: -100px;
   }
 
   .hero-flex{
