@@ -21,6 +21,7 @@ body {
 
 .header-logo > h3 {
   margin-left: 10px;
+  font-size: 36px;
   color: rgb(255, 183, 0);
 }
 
@@ -61,12 +62,19 @@ body {
 }
 
 /* body Section Css */
-.body{
+.hero{
   display: flex;
   flex-direction: row;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to bottom right, rgb(255, 158, 47), rgb(255, 60, 60));
+}
+
+.hero-text{
+  font-size: 56px;
+  margin-left: 55px;
+  font-family: Bebas Neue;
 }
 
 @media (max-width: 700px){
@@ -79,5 +87,13 @@ body {
 
   .header-logo{
     justify-content: center;
+  }
+
+  .hero{
+    flex-wrap: wrap;
+  }
+
+  .hero-flex{
+    flex-basis: 50%;
   }
 }

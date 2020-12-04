@@ -1,13 +1,14 @@
 import React from 'react'
+import HeroImg from "../assets/hero-img.png"
 
 const HeroSection = () => {
     return (
-        <div className="body">
-            <div class="body-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, totam?</p>
+        <div className="hero">
+            <div class="hero-flex hero-text">
+                <p>To find everything in something</p>
             </div>
-            <div class="body-image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, totam?</p>
+            <div class="hero-flex hero-image">
+                <img src={HeroImg} alt="hero-img" height={"350px"} />
             </div>
         </div>
     )
