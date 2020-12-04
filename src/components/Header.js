@@ -8,10 +8,10 @@ const Header = () => {
         <h3>For<span>Community</span></h3>
       </div>
       <div className="header-link">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Teams</a>
-        <a href="">Contact</a>
+        <a href="/">Home</a>
+        <a href="/">About</a>
+        <a href="/">Teams</a>
+        <a href="/">Contact</a>
       </div>
     </div>
   );

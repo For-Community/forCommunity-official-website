@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react'
-import BodySection from "./BodySection"
+import HeroSection from "./HeroSection"
 
 function Body() {
   return (
     <Fragment>
-      <BodySection/>
+      <HeroSection/>
     </Fragment>
   )
 }
