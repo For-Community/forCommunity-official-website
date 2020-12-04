@@ -21,11 +21,15 @@ body {
 
 .header-logo > h3 {
   margin-left: 10px;
-  color: goldenrod;
+  color: rgb(255, 183, 0);
+}
+
+.header-logo h3 span{
+  color: azure;
 }
 
 .header {
-  background-color: #000000;
+  /* background-color: #000000; */
   color: white;
   display: flex;
   justify-content: space-around;
@@ -55,4 +59,18 @@ body {
   margin-bottom: -250px;
   position: fixed;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
+@media (max-width: 700px){
+  .header{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    height: 90px;
+  }
+
+  .header-logo{
+    justify-content: center;
+  }
 }
