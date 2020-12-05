@@ -5,7 +5,9 @@ const Header = () => {
     <div className="header">
       <div className="header-logo">
         <i class="fa fa-rocket" aria-hidden="true"></i>
-        <h3>For<span>Community</span></h3>
+        <h3>
+          For<span>Community</span>
+        </h3>
       </div>
       <div className="header-link">
         <a href="/">Home</a>
