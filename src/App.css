@@ -19,8 +19,12 @@ body {
   align-items: center;
 }
 
+.header-logo img{
+  height: 110px;
+  width: 130px;
+}
+
 .header-logo > h3 {
-  margin-left: 10px;
   font-size: 36px;
   color: rgb(255, 183, 0);
 }
@@ -29,14 +33,12 @@ body {
   color: azure;
 }
 
-.header-logo i {
-  font-size: 29px;
-}
 
 .header {
   background-color: #821752;
   color: white;
   display: flex;
+  padding: 0.7rem 2rem;
   justify-content: space-around;
   align-items: center;
   height: 64px;
@@ -55,14 +57,6 @@ body {
 .header-link > a:hover {
   color: rgb(255, 183, 0);
   transition: 0.5s;
-}
-
-.image-body {
-  width: 100%;
-  z-index: -1;
-  margin-bottom: -250px;
-  position: fixed;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 /* body Section Css */
@@ -128,14 +122,20 @@ body {
 
   .header-logo {
     justify-content: center;
+    margin-left: -29px;
   }
 
   .header-logo > h3 {
     font-size: 26px;
   }
 
-  .header-logo i {
-    font-size: 25px;
+  .header-logo img{
+    width: 100px;
+    height: 95px;
+  }
+
+  .header-link a{
+    justify-content: center;
   }
 
   .hero {

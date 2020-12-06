@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../assets/logo.png"
 
 const Header = () => {
   return (
     <div className="header">
       <div className="header-logo">
-        <i class="fa fa-rocket" aria-hidden="true"></i>
+        <img src={logo} alt="For Community Logo" />
         <h3>
           For<span>Community</span>
         </h3>
