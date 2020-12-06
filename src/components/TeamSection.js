@@ -7,7 +7,7 @@ import team4 from "../assets/team4.jpg"
 
 function TeamSection() {
     return (
-        <div className="team-section">
+        <div className="team-section" id="community">
             <div class="team-container">
                 <div class="team-row">
                     <div class="team-title">

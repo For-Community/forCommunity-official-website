@@ -3,7 +3,7 @@ import HeroImg from "../assets/home.png";
 
 const HeroSection = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div class="hero-flex hero-text">
         <h4>
           To find <span>everything</span> in <span>something...</span>

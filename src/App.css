@@ -1,10 +1,9 @@
-/* 9f5f80 */
-/* #583D72  */
-/* ffba93 */
-/* ff8e71 */
-
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html{
+
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -145,6 +144,7 @@ body {
   flex-basis: 100%;
   max-width: 100%;
   margin-bottom: 70px;
+  margin-top: 30px;
 }
 
 .team-section .team-title h1{

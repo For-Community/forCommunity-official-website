@@ -1,16 +1,19 @@
-import React from "react";
+import React, {Fragment} from "react";
+
 import "./App.css";
 import Header from "./components/Header";
-import Body from "./components/Body";
+import About from "./components/About";
+import Home from "./components/Home";
+import TeamSection from "./components/TeamSection";
 
 function App() {
   return (
-    <div className="App">
-      {/* Header */}
-      <Header />
-      {/* Body */}
-      <Body />
-    </div>
+      <Fragment>
+        <Header />
+        <Home />
+        <About />
+        <TeamSection />
+      </Fragment>
   );
 }
 
