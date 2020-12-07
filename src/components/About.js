@@ -6,10 +6,10 @@ function About() {
       <div className="about-text">
         <h3>About us</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-          corrupti fugiat, nesciunt accusamus nulla repellendus neque deserunt
-          temporibus unde harum odio minima quasi quidem, minus facere nostrum
-          sint molestiae cum!
+          We are a budding community of enthusiatic people belonging to
+          different tech stacks. Innovation, cooperation and quality form the
+          base of our operations. We are always thrilled to have more members on
+          board. The more the merrier right?
         </p>
       </div>
     </div>

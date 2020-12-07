@@ -6,6 +6,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import TeamSection from "./components/TeamSection";
 import Connect from "./components/Connect";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <TeamSection />
         <Connect />
+        <Footer />
       </Fragment>
   );
 }

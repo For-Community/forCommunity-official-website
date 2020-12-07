@@ -12,7 +12,7 @@ function TeamSection() {
                 <div class="team-row">
                     <div class="team-title">
                         <h1>Our Community</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae omnis quas esse itaque. Reiciendis, sapiente.</p>
+                        <p>A small yet growing team of members</p>
                     </div>
                 </div>
                 <div class="team-row">

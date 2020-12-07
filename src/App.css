@@ -341,6 +341,16 @@ body {
   transform: scale(1.6)
 }
 
+.footer-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #feac5e;  }
+
+.footer-section h5{
+  font-size: 20px;
+}
+
 @media (max-width: 991px) {
   .team-section .team-items .team-item{
     flex-basis: calc(50% - 30px);
