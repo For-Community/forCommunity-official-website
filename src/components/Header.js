@@ -16,7 +16,7 @@ const Header = () => {
           <a href="#about">About</a>
           <a href="#community">Community</a>
           <a href="#home">Projects</a>
-          <a href="#home">Connect</a>
+          <a href="#connect">Connect</a>
         </div>
       </div>
   );

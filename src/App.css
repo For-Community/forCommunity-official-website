@@ -241,10 +241,123 @@ body {
   box-shadow: 0 0 10px;
 }
 
+.contact-section{ 
+  background: #70e1f5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 70px 15px 30px;
+  min-height: 100vh;
+}
+
+.contact-container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.contact-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-section .contact-title{
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.contact-section .contact-title h1{
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  color: #832E52;
+}
+.contact-section .contact-title p{
+  font-size: 16px;
+  text-align: center;
+  color: rgb(78, 78, 78);
+  margin: 15px 0 0;
+}
+
+.social-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-info{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.social-card{
+  background-color: antiquewhite;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.social-card p{
+  margin-top: 10px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.social-card:hover p{
+  max-height: 30px;
+  opacity: 1;
+}
+
+.social-card-icon{
+  font-size: 28px;
+  background: -webkit-linear-gradient(to right, #feac5e, #c779d0); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #feac5e, #c779d0);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.social-card a{
+  color: black;
+}
+
+.social-card:hover .social-card-icon{
+  background: none;
+  color: #832E52;
+  transform: scale(1.6)
+}
+
 @media (max-width: 991px) {
   .team-section .team-items .team-item{
     flex-basis: calc(50% - 30px);
     max-width: calc(50% - 30px);
+  }
+
+  .social-info{
+    flex-direction: column;
+  }
+
+  .social-card{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0  ;
   }
 }
 
@@ -329,12 +442,17 @@ body {
 
 @media (max-width: 360px) {
   .header-link{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .hero-image img {
     height: 230px;
     width: 260px;
     margin-top: -90px;
+  }
+
+  .social-card{
+    width: 100%;
+    max-width: 300px;
   }
 }
