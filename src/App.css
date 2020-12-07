@@ -317,3 +317,24 @@ body {
     max-width: calc(100%);
   }
 }
+
+@media (max-width: 460px) {
+  .header-link{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-link{
+    font-size: 14px;
+  }
+
+  .hero-image img {
+    height: 230px;
+    width: 260px;
+    margin-top: -90px;
+  }
+}
