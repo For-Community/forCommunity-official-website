@@ -486,26 +486,6 @@ body {
     padding: 20px;
     background: linear-gradient(to right, #feac5e, #70e1f5);
   }
-
-  .project > h2 {
-    text-align: center;
-    color: #821752;
-  }
-
-  .project {
-    padding: 20px;
-    background: #00c6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
 }
 
 .footer-section > h5 > a {
@@ -571,6 +551,7 @@ body {
   color: white;
   font-size: medium;
   border: none;
+  outline-width: 0;
 }
 
 .btn {
