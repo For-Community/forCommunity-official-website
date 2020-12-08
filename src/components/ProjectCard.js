@@ -10,12 +10,12 @@ function ProjectCard({ img, title, git, site }) {
           <div className="btn">
             <a href={git}>
               <button className="button">
-                <i class="fab fa-github">Git</i>
+                <i class="fab fa-github"></i>
               </button>
             </a>
             <a href={site}>
               <button className="button">
-                <i class="fab fa-firefox-browser">Site</i>
+                <i class="fab fa-firefox-browser"></i>
               </button>
             </a>
           </div>
