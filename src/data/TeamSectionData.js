@@ -28,30 +28,6 @@ const TeamSectionData = [
       facebook: "https://facebook.com/justin.varghese42",
     },
   },
-  {
-    id: "3",
-    name: "Stephin",
-    designation: "React Dev",
-    img: team3,
-    sociallinks: {
-      github: "https://github.com/stephin007",
-      twitter: "https://github.com/stephin007",
-      linkedin: "https://github.com/stephin007",
-      facebook: "https://github.com/stephin007",
-    },
-  },
-  {
-    id: "4",
-    name: "Stephin",
-    designation: "React Dev",
-    img: team4,
-    sociallinks: {
-      github: "https://github.com/stephin007",
-      twitter: "https://github.com/stephin007",
-      linkedin: "https://github.com/stephin007",
-      facebook: "https://github.com/stephin007",
-    },
-  },
 ];
 
 export default TeamSectionData
