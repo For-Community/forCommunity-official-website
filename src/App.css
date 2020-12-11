@@ -221,6 +221,9 @@ body {
 
 .team-section .team-items .team-item .inner .info .social-links {
   padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-section .team-items .team-item .inner .info .social-links a {

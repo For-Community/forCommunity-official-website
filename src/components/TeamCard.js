@@ -10,16 +10,44 @@ const TeamCard = ({ name, img, designation, sociallinks }) => {
               <h5>{name}</h5>
               <p>{designation}</p>
               <div class="social-links">
-                <a href={sociallinks.github}>
-                  <span className="fa fa-github" target="_blank" rel="noreferrer"></span>
+                <a
+                  href={sociallinks.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: sociallinks.github !== "" ? "block" : "none",
+                  }}
+                >
+                  <span className="fa fa-github"></span>
                 </a>
-                <a href={sociallinks.twitter}>
-                  <span className="fa fa-twitter" target="_blank" rel="noreferrer"></span>
+                <a
+                  href={sociallinks.twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: sociallinks.twitter !== "" ? "block" : "none",
+                  }}
+                >
+                  <span className="fa fa-twitter"></span>
                 </a>
-                <a href={sociallinks.linkedin}>
-                  <span className="fa fa-linkedin" target="_blank" rel="noreferrer"></span>
+                <a
+                  href={sociallinks.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: sociallinks.linkedin !== "" ? "block" : "none",
+                  }}
+                >
+                  <span className="fa fa-linkedin"></span>
                 </a>
-                <a href={sociallinks.facebook} target="_blank" rel="noreferrer">
+                <a
+                  href={sociallinks.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: sociallinks.facebook !== "" ? "block" : "none",
+                  }}
+                >
                   <span className="fa fa-facebook"></span>
                 </a>
               </div>
