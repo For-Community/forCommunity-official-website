@@ -367,6 +367,11 @@ body {
   font-size: 20px;
 }
 
+.footer-section h5 a:hover{
+  cursor: pointer;
+  color: white;
+}
+
 @media (max-width: 991px) {
   .team-section .team-items .team-item {
     flex-basis: calc(50% - 30px);
