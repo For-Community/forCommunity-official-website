@@ -1,5 +1,6 @@
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpg";
+import team3 from "../assets/team3.jpg";
 
 const TeamSectionData = [
   {
@@ -24,6 +25,18 @@ const TeamSectionData = [
       twitter: "https://twitter.com/justinnn_06",
       linkedin: "https://www.linkedin.com/in/justin-varghese-8704a91b3/",
       facebook: "https://facebook.com/justin.varghese42",
+    },
+  },
+  {
+    id: "3",
+    name: "Abhijith S",
+    designation: "Django dev",
+    img: team3,
+    sociallinks: {
+      github: "https://github.com/masspher",
+      twitter:"https://twitter.com/abhijiths_2003?s=20",
+      linkedin: "https://www.linkedin.com/in/abhijith-s-bb8a24201",
+      facebook: "https://www.facebook.com/profile.php?id=100049296183097",
     },
   },
 ];
