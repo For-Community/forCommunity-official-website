@@ -486,10 +486,6 @@ body {
     width: 100%;
     max-width: 300px;
   }
-  .footer-section > h5 > a {
-    text-decoration: none;
-    color: black;
-  }
   .project {
     padding: 20px;
     background: linear-gradient(to right, #feac5e, #70e1f5);
