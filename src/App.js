@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import TeamSection from "./components/TeamSection";
 import Connect from "./components/Connect";
 import Footer from "./components/Footer";
-import Project from "./components/Project";
+// import Project from "./components/Project";
 
 function App() {
   return (
