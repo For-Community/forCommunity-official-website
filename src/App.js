@@ -16,7 +16,7 @@ function App() {
       <Home />
       <About />
       <TeamSection />
-      <Project />
+      {/* <Project /> */}
       <Connect />
       <Footer />
     </Fragment>
