@@ -1,6 +1,7 @@
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpg";
 import team3 from "../assets/team3.jpg";
+import team4 from "../assets/team4.jpg";
 
 const TeamSectionData = [
   {
@@ -39,6 +40,30 @@ const TeamSectionData = [
       facebook: "https://www.facebook.com/profile.php?id=100049296183097",
     },
   },
+  {
+    id: "4",
+    name: "Akshay V Doizode",
+    designation: "ML Specialist",
+    img: team4,
+    sociallinks: {
+      github: "https://github.com/akshayvdoizode",
+      twitter:"",
+      linkedin: "https://www.linkedin.com/in/akshay-v-doizode-074895b4/", 
+      facebook: "",
+    },
+  },
+  {
+    id: "5",
+    name: "Kiran Sethumadhavan",
+    designation: "Python Dev",
+    img: team2,
+    sociallinks: {
+      github: "https://github.com/Kiran-Sethu46",
+      twitter:"https://twitter.com/Kiransethu001",
+      linkedin: "https://www.linkedin.com/in/kiran-sethumadhavan-42a00676/",
+      facebook: "https://www.facebook.com/kiran.sethu.1/",
+    },
+  }
 ];
 
 export default TeamSectionData
