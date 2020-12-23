@@ -479,6 +479,11 @@ body {
   color: white;
 }
 
+.footer-section > h5 > a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width: 991px) {
   .team-section .team-items .team-item {
     flex-basis: calc(50% - 30px);
@@ -605,96 +610,3 @@ body {
     background: linear-gradient(to right, #feac5e, #70e1f5);
   }
 }
-
-.footer-section > h5 > a {
-  text-decoration: none;
-  color: black;
-}
-
-/* .project > h2 {
-  text-align: center;
-  color: #821752;
-}
-.projectCard {
-  position: relative;
-  width: 60%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 250px;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-.project-middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.projectCard:hover .image {
-  opacity: 0.3;
-}
-
-.projectCard:hover .project-middle {
-  opacity: 1;
-}
-
-.project-text {
-  background-color: transparent;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.pro-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  cursor: pointer;
-  background-color: transparent;
-  height: 50px;
-  width: 100px;
-  color: white;
-  font-size: medium;
-  border: none;
-  outline-width: 0;
-}
-
-.btn {
-  display: flex;
-} */
-
-/* .project {
-  padding-bottom: 100px;
-  background: #fc4a1a; 
-  background: -webkit-linear-gradient(
-    to right,
-    #f7b733,
-    #fc4a1a
-  ); 
-  background: linear-gradient(
-    to right,
-    #f7b733,
-    #fc4a1a
-  );
-
-  padding: 20px;
-  padding-bottom: 20px;
-}
-
-button > i {
-  color: black;
-  font-size: large;
-} */
