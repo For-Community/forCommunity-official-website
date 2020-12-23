@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +25,7 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+/* NAVBAR CSS START */
 .header-logo {
   display: flex;
   align-items: center;
@@ -68,7 +70,9 @@ body {
   transition: 0.5s;
 }
 
-/* body Section Css */
+/* NAVBAR CSS END */
+
+/* BODY CSS START */
 .hero {
   display: flex;
   flex-direction: row;
@@ -92,6 +96,9 @@ body {
   color: whitesmoke;
 }
 
+/* BODY CSS END */
+
+/* ABOUT CSS START */
 .about {
   display: flex;
   justify-content: center;
@@ -115,6 +122,10 @@ body {
   font-size: 52px;
   letter-spacing: 5px;
 }
+
+/* ABOUT CSS END */
+
+/* TEAM CSS START */
 
 .team-section {
   /* fallback for old browsers */
@@ -243,8 +254,9 @@ body {
 .team-section .team-items .team-item .inner .info .social-links a:hover {
   box-shadow: 0 0 10px;
 }
+/* TEAM CSS END */
 
-/* Project section css starts */
+/* PROJECTS CSS START */
 
 .project-section{
   background: #fc4a1a; 
@@ -267,10 +279,10 @@ body {
   margin: auto;
 }
 
-/* .project-row {
+.project-row {
   display: flex;
   flex-wrap: wrap;
-} */
+}
 
 .project-section .project-title {
   flex-basis: 100%;
@@ -346,8 +358,9 @@ body {
   transition: all 0.5s ease;
 }
 
+/* PROJECTS CSS END */
 
-/* Project section css ends */
+/* CONTACT CSS START */
 .contact-section {
   background: #70e1f5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -463,6 +476,10 @@ body {
   transform: scale(1.6);
 }
 
+/* CONTACT CSS END */
+
+/* FOOTER CSS START */
+
 .footer-section {
   display: flex;
   align-items: center;
@@ -483,6 +500,10 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* FOOTER CSS END */
+
+/* MEDIA QUERIES */
 
 @media (max-width: 991px) {
   .team-section .team-items .team-item {
@@ -610,3 +631,5 @@ body {
     background: linear-gradient(to right, #feac5e, #70e1f5);
   }
 }
+
+/* MEDIA QUERIES END */
