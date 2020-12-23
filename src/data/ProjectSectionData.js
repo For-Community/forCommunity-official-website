@@ -20,26 +20,6 @@ const ProjectSectionData = [
       web: "https://discord-clone-989.web.app",
       git: "https://github.com/For-Community/discord-clone",
     },
-  },{
-    id: 2,
-    imglink: "https://justinnn07.netlify.app/images/portfolio/discord.PNG",
-    title: "Discord Clone",
-    desc: "A live Clone of Discord",
-    techstack: "React JS",
-    links: {
-      web: "https://discord-clone-989.web.app",
-      git: "https://github.com/For-Community/discord-clone",
-    },
-  },{
-    id: 2,
-    imglink: "https://justinnn07.netlify.app/images/portfolio/discord.PNG",
-    title: "Discord Clone",
-    desc: "A live Clone of Discord",
-    techstack: "React JS",
-    links: {
-      web: "https://discord-clone-989.web.app",
-      git: "https://github.com/For-Community/discord-clone",
-    },
   },
 ];
 
