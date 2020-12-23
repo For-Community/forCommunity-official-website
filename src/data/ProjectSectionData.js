@@ -2,7 +2,8 @@ const ProjectSectionData = [
   {
     id: 1,
     imglink: "https://justinnn07.netlify.app/images/portfolio/covid.PNG",
-    desc: "Real Time Covid-19 Tracker",
+    title: "Covid Tracker",
+    desc: "A live Covid19 Cases Tracker App",
     techstack: "React JS",
     links: {
       web: "https://covid-tracker-989.web.app",
@@ -12,7 +13,28 @@ const ProjectSectionData = [
   {
     id: 2,
     imglink: "https://justinnn07.netlify.app/images/portfolio/discord.PNG",
-    desc: "Clone of Discord",
+    title: "Discord Clone",
+    desc: "A live Clone of Discord",
+    techstack: "React JS",
+    links: {
+      web: "https://discord-clone-989.web.app",
+      git: "https://github.com/For-Community/discord-clone",
+    },
+  },{
+    id: 2,
+    imglink: "https://justinnn07.netlify.app/images/portfolio/discord.PNG",
+    title: "Discord Clone",
+    desc: "A live Clone of Discord",
+    techstack: "React JS",
+    links: {
+      web: "https://discord-clone-989.web.app",
+      git: "https://github.com/For-Community/discord-clone",
+    },
+  },{
+    id: 2,
+    imglink: "https://justinnn07.netlify.app/images/portfolio/discord.PNG",
+    title: "Discord Clone",
+    desc: "A live Clone of Discord",
     techstack: "React JS",
     links: {
       web: "https://discord-clone-989.web.app",

@@ -1,27 +1,26 @@
 import React from "react";
 
-function ProjectCard({ img, desc, links}) {
+function ProjectCard({ title, img, desc, links}) {
   return (
-    <div className="projectCard">
-      <img src={img} alt="" className="image" style={{ width: "100%" }} />
-      <div className="project-middle">
-        <div className="project-text">
-          {desc}
-          <div className="btn">
-            <a href={links.git}>
-              <button className="button">
-                <i class="fab fa-github"></i>
-              </button>
-            </a>
-            <a href={links.web}>
-              <button className="button">
-                <i class="fab fa-firefox-browser"></i>
-              </button>
-            </a>
+    <>
+      <div className="project-item">
+        <img src={img} alt="" className="image" style={{ width: "100%" }} />
+        <div className="inner">
+          <div class="info">
+            <h2>{title}</h2>
+            <p>{desc}</p>
+            <div className="social-links">
+              <a href={links.git}>
+                  <span class="fab fa-github"></span>
+              </a>
+              <a href={links.web}>
+                  <span class="fab fa-firefox-browser"></span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
