@@ -244,6 +244,110 @@ body {
   box-shadow: 0 0 10px;
 }
 
+/* Project section css starts */
+
+.project-section{
+  background: #fc4a1a; 
+  background: -webkit-linear-gradient(
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); 
+  background: linear-gradient(
+    to right,
+    #f7b733,
+    #fc4a1a
+  );
+  padding: 70px 15px 30px;
+  min-height: 100vh;
+}
+
+.project-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* .project-row {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.project-section .project-title {
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.project-section .project-title h1 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 5px;
+  font-size: 53px;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+.project-section .project-items {
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-section .project-items .project-item {
+  flex-basis: calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  transition: all 0.5s ease;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.project-section .project-items .project-item img{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-section .project-items .project-item .inner .info h2 {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.project-section .project-items .project-item .inner .info p {
+  margin: 10px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #818181;
+}
+
+.project-section .project-items .project-item .inner .info .social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-section .project-items .project-item .inner .info .social-links a{
+  display: inline-block;
+  height: 42px;
+  width: 62px;
+  background-color: #fcc01a;
+  color: #000;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  line-height: 41px;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+
+
+/* Project section css ends */
 .contact-section {
   background: #70e1f5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -380,6 +484,11 @@ body {
     flex-basis: calc(50% - 30px);
     max-width: calc(50% - 30px);
   }
+
+  .project-section .project-items .project-item {
+    flex-basis: calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
 }
 
 @media (max-width: 700px) {
@@ -451,6 +560,11 @@ body {
     max-width: calc(100%);
   }
 
+  .project-section .project-items .project-item {
+    flex-basis: calc(100%);
+    max-width: calc(100%);
+  }
+
   .social-info {
     flex-direction: column;
   }
@@ -497,7 +611,7 @@ body {
   color: black;
 }
 
-.project > h2 {
+/* .project > h2 {
   text-align: center;
   color: #821752;
 }
@@ -560,21 +674,21 @@ body {
 
 .btn {
   display: flex;
-}
+} */
 
-.project {
+/* .project {
   padding-bottom: 100px;
-  background: #fc4a1a; /* fallback for old browsers */
+  background: #fc4a1a; 
   background: -webkit-linear-gradient(
     to right,
     #f7b733,
     #fc4a1a
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #f7b733,
     #fc4a1a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 
   padding: 20px;
   padding-bottom: 20px;
@@ -583,4 +697,4 @@ body {
 button > i {
   color: black;
   font-size: large;
-}
+} */
