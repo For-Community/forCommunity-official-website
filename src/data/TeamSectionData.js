@@ -35,7 +35,7 @@ const TeamSectionData = [
     img: team3,
     sociallinks: {
       github: "https://github.com/masspher",
-      twitter:"https://twitter.com/abhijiths_2003?s=20",
+      twitter: "https://twitter.com/abhijiths_2003?s=20",
       linkedin: "https://www.linkedin.com/in/abhijith-s-bb8a24201",
       facebook: "https://www.facebook.com/profile.php?id=100049296183097",
     },
@@ -47,8 +47,8 @@ const TeamSectionData = [
     img: team4,
     sociallinks: {
       github: "https://github.com/akshayvdoizode",
-      twitter:"",
-      linkedin: "https://www.linkedin.com/in/akshay-v-doizode-074895b4/", 
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/akshay-v-doizode-074895b4/",
       facebook: "",
     },
   },
@@ -59,11 +59,23 @@ const TeamSectionData = [
     img: team2,
     sociallinks: {
       github: "https://github.com/Kiran-Sethu46",
-      twitter:"https://twitter.com/Kiransethu001",
+      twitter: "https://twitter.com/Kiransethu001",
       linkedin: "https://www.linkedin.com/in/kiran-sethumadhavan-42a00676/",
       facebook: "https://www.facebook.com/kiran.sethu.1/",
     },
-  }
+  },
+  {
+    id: "6",
+    name: "Kan Sethumadhavan",
+    designation: "Python Dev",
+    img: team2,
+    sociallinks: {
+      github: "https://github.com/Kiran-Sethu46",
+      twitter: "https://twitter.com/Kiransethu001",
+      linkedin: "https://www.linkedin.com/in/kiran-sethumadhavan-42a00676/",
+      facebook: "https://www.facebook.com/kiran.sethu.1/",
+    },
+  },
 ];
 
 export default TeamSectionData
