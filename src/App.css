@@ -610,3 +610,34 @@ body {
     background: linear-gradient(to right, #feac5e, #70e1f5);
   }
 }
+
+
+.example_e {
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding:60px;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  width:'80%';
+  box-shadow: 0 0 5px 5px rgba(255,0,0,0.5);
+  cursor: pointer;
+
+}
+
+  .example_e:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: rgba(255,0,0,0.3);
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  box-shadow: 0 0 5px 5px #404040;
+  cursor: pointer;
+
+    }
