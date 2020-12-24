@@ -189,8 +189,7 @@ body {
 
 .team-section .team-items .team-item img {
   display: block;
-  width: 265px;
-  height: 330px;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -259,18 +258,10 @@ body {
 
 /* PROJECTS CSS START */
 
-.project-section{
-  background: #fc4a1a; 
-  background: -webkit-linear-gradient(
-    to right,
-    #f7b733,
-    #fc4a1a
-  ); 
-  background: linear-gradient(
-    to right,
-    #f7b733,
-    #fc4a1a
-  );
+.project-section {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
   padding: 70px 15px 30px;
   min-height: 100vh;
 }
@@ -319,7 +310,7 @@ body {
   padding: 10px;
 }
 
-.project-section .project-items .project-item img{
+.project-section .project-items .project-item img {
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -338,14 +329,14 @@ body {
   color: #818181;
 }
 
-.project-section .project-items .project-item .inner .info .social-links{
+.project-section .project-items .project-item .inner .info .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.project-section .project-items .project-item .inner .info .social-links a{
+.project-section .project-items .project-item .inner .info .social-links a {
   display: inline-block;
   height: 42px;
   width: 62px;
@@ -492,7 +483,7 @@ body {
   font-size: 20px;
 }
 
-.footer-section h5 a:hover{
+.footer-section h5 a:hover {
   cursor: pointer;
   color: white;
 }
@@ -634,3 +625,21 @@ body {
 }
 
 /* MEDIA QUERIES END */
+
+.btn-btn1 {
+  background-color: #aed9e0;
+  border: none;
+  color: white;
+  padding: 15px 55px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+.btn-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
