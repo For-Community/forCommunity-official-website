@@ -4,11 +4,16 @@ import ProjectCard from "./ProjectCard";
 
 function Project() {
   const [projectData, setProjectData] = useState([]);
-  const [visiblity, setVisiblity] = useState(3);
+  const [visiblity, setVisiblity] = useState(4);
 
   const viewmore = () => {
-    setVisiblity(visiblity + 2);
+    setVisiblity(visiblity + 4);
   };
+
+  const hide = () => {
+    setVisiblity(visiblity - 8);
+  };
+
   useEffect(() => {
     setProjectData(ProjectSectionData);
     // console.log(ProjectSectionData);
@@ -38,12 +43,14 @@ function Project() {
         </div>
       </div>
       <div className="btn-h">
-        {visiblity < 5 ? (
+        {visiblity < 10 ? (
           <button className="btn-btn1" onClick={viewmore}>
-            Load more{" "}
+            Show More
           </button>
         ) : (
-          <button style={{ display: "none" }}>LOad more</button>
+          <button className="btn-btn1" onClick={hide}>
+            Show Less
+          </button>
         )}
       </div>
     </div>
