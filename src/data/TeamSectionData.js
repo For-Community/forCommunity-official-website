@@ -63,19 +63,7 @@ const TeamSectionData = [
       linkedin: "https://www.linkedin.com/in/kiran-sethumadhavan-42a00676/",
       facebook: "https://www.facebook.com/kiran.sethu.1/",
     },
-  },
-  {
-    id: "6",
-    name: "Kan Sethumadhavan",
-    designation: "Python Dev",
-    img: team2,
-    sociallinks: {
-      github: "https://github.com/Kiran-Sethu46",
-      twitter: "https://twitter.com/Kiransethu001",
-      linkedin: "https://www.linkedin.com/in/kiran-sethumadhavan-42a00676/",
-      facebook: "https://www.facebook.com/kiran.sethu.1/",
-    },
-  },
+  }
 ];
 
 export default TeamSectionData
