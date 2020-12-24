@@ -189,7 +189,8 @@ body {
 
 .team-section .team-items .team-item img {
   display: block;
-  width: 100%;
+  width: 262px;
+  height: 330px;
   border-radius: 8px;
 }
 
