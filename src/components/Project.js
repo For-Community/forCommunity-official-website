@@ -11,7 +11,7 @@ function Project() {
   };
 
   const hide = () => {
-    setVisiblity(visiblity - 8);
+    setVisiblity(visiblity - 4);
   };
 
   useEffect(() => {
@@ -43,7 +43,7 @@ function Project() {
         </div>
       </div>
       <div className="project-btn-h">
-        {visiblity < 10 ? (
+        {visiblity < 8 ? (
           <button className="project-btn-btn1" onClick={viewmore}>
             Show More
           </button>

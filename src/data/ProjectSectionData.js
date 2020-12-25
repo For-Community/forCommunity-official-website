@@ -82,6 +82,17 @@ const ProjectSectionData = [
       git: "https://github.com/For-Community/discord-clone",
     },
   },
+  {
+    id: 8,
+    imglink: "https://i.ytimg.com/vi/bZ2MOePZuRg/maxresdefault.jpg",
+    title: "Zoom Clone",
+    desc: "A live Zoom Clone",
+    techstack: "Nodejs",
+    links: {
+      web: "nodejs-zoom-clone1.herokuapp.com/",
+      git: "https://github.com/For-Community/nodejs-zoom-clone",
+    },
+  },
 ];
 
 export default ProjectSectionData;
