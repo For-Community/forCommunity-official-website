@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import TeamSectionData from "../data/TeamSectionData";
 import TeamCard from "./TeamCard";
 let count = 4;
@@ -56,31 +56,17 @@ function TeamSection() {
       </div>
       <div>
         {myData.length > 0 ? (
-          <Fragment>
-            <div class="button_cont" align="center">
-              <button
-                class="example_e"
-                target="_blank"
-                rel="nofollow noopener"
-                onClick={onClickMore}
-              >
-                Show More
-              </button>
-            </div>
-          </Fragment>
+          <div class="button_cont" align="center">
+            <button class="team-btn" onClick={onClickMore}>
+              Show More
+            </button>
+          </div>
         ) : (
-          <Fragment>
-            <div class="button_cont" align="center">
-              <button
-                class="example_e"
-                target="_blank"
-                rel="nofollow noopener"
-                onClick={onClickLess}
-              >
-                Show Less
-              </button>
-            </div>
-          </Fragment>
+          <div class="button_cont" align="center">
+            <button class="team-btn" onClick={onClickLess}>
+              Show Less
+            </button>
+          </div>
         )}
       </div>
     </div>

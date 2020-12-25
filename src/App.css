@@ -659,35 +659,30 @@ body {
   }
 }
 
+/* MEDIA QUERIES END */
 
-.example_e {
+.team-btn {
   border: none;
-  background: #404040;
-  color: #ffffff !important;
-  font-weight: 100;
+  background: #FAAB5F;
+  color: black;
+  font-weight: 900;
   padding:60px;
-  padding-top:10px;
-  padding-bottom:10px;
+  outline-width: 0;
+  padding: 15px 55px;
+  font-size: 16px;
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: 20px;
   display: inline-block;
   transition: all 0.3s ease 0s;
-  width:'80%';
-  box-shadow: 0 0 5px 5px rgba(255,0,0,0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 
 }
 
-  .example_e:hover {
-    color: #404040 !important;
-    font-weight: 700 !important;
-    letter-spacing: 3px;
-    background: rgba(255,0,0,0.3);
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  box-shadow: 0 0 5px 5px #404040;
-  cursor: pointer;
+  .team-btn:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); 
+  background-color: #E0899C;
+  color: white;
 
     }
-/* MEDIA QUERIES END */
 
