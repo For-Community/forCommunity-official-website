@@ -1,6 +1,5 @@
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpeg";
-// import team3 from "../assets/team3.jpg";
 import team4 from "../assets/team4.jpeg";
 import team5 from "../assets/team5.jpeg";
 import team6 from "../assets/team6.jpeg";
