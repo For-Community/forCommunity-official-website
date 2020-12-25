@@ -7,9 +7,8 @@ let myData = [...TeamSectionData];
 let tempPosts = [...myData];
 
 function TeamSection() {
-  // const [teamData, setTeamData] = useState([]);
   const [teamMembers, setTeamMembers] = useState([]);
-  const [current, setCurrent] = useState(0);
+  const [current] = useState(0);
 
   const showMembersMore = (start, end) => {
     const selectedPosts = myData.splice(start, end);
@@ -17,16 +16,8 @@ function TeamSection() {
     setTeamMembers(posts);
   };
 
-  // const showMembersLess = (start, end) => {
-  //   const selectedPosts = tempPosts.slice(start, end);
-  //   setTeamMembers(selectedPosts);
-  //   // TeamSectionData
-  // };
-
   useEffect(() => {
-    // setTeamData(TeamSectionData);
     showMembersMore(0, count);
-    // console.log(TeamSectionData)
   }, []);
 
   const onClickMore = () => {
@@ -35,7 +26,6 @@ function TeamSection() {
 
   const onClickLess = () => {
     myData = [...tempPosts];
-    // console.log(myData);
     console.log(tempPosts);
     posts = [];
     showMembersMore(current, count);
@@ -68,27 +58,27 @@ function TeamSection() {
         {myData.length > 0 ? (
           <Fragment>
             <div class="button_cont" align="center">
-              <a
+              <button
                 class="example_e"
                 target="_blank"
                 rel="nofollow noopener"
                 onClick={onClickMore}
               >
                 Show More
-              </a>
+              </button>
             </div>
           </Fragment>
         ) : (
           <Fragment>
             <div class="button_cont" align="center">
-              <a
+              <button
                 class="example_e"
                 target="_blank"
                 rel="nofollow noopener"
                 onClick={onClickLess}
               >
                 Show Less
-              </a>
+              </button>
             </div>
           </Fragment>
         )}

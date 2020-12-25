@@ -1,6 +1,5 @@
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpeg";
-// import team3 from "../assets/team3.jpg";
 import team4 from "../assets/team4.jpeg";
 import team5 from "../assets/team5.jpeg";
 import team6 from "../assets/team6.jpeg";
@@ -78,30 +77,18 @@ const TeamSectionData = [
       facebook: "https://www.facebook.com/G.vishakh/",
     },
   },
-  {
-    id: "4",
-    name: "Akshay V Doizode",
-    designation: "ML Specialist",
-    img: team3,
-    sociallinks: {
-      github: "https://github.com/akshayvdoizode",
-      twitter: "/",
-      linkedin: "https://www.linkedin.com/in/akshay-v-doizode-074895b4/",
-      facebook: "/",
-    },
-  },
-  {
-    id: "5",
-    name: "Vansh Sehgal",
-    designation: "MERN Stack",
-    img: team3,
-    sociallinks: {
-      github: "https://github.com/vanshsehgal2001/",
-      twitter: "https://twitter.com/Vansh_Sehgal_18",
-      linkedin: "https://www.linkedin.com/in/vansh-sehgal-1519391a8/",
-      facebook: "https://www.facebook.com/vansh.sehgal.790",
-    },
-  },
+  // {
+  //   id: "7",
+  //   name: "Vansh Sehgal",
+  //   designation: "MERN Stack",
+  //   img: team1,
+  //   sociallinks: {
+  //     github: "https://github.com/vanshsehgal2001/",
+  //     twitter: "https://twitter.com/Vansh_Sehgal_18",
+  //     linkedin: "https://www.linkedin.com/in/vansh-sehgal-1519391a8/",
+  //     facebook: "https://www.facebook.com/vansh.sehgal.790",
+  //   },
+  // },
 ];
 
 export default TeamSectionData;
