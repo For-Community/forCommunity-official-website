@@ -356,6 +356,7 @@ body {
   border: none;
   border-radius: 20px;
   color: black;
+  outline-width: 0;
   font-weight: 900;
   padding: 15px 55px;
   text-decoration: none;
