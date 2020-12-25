@@ -339,12 +339,11 @@ body {
 
 .project-section .project-items .project-item .inner .info .social-links a {
   display: inline-block;
-  height: 42px;
-  width: 62px;
   background-color: #fcc01a;
   color: #000;
   border-radius: 10px;
-  margin: auto;
+  margin: 2px;
+  flex-grow: 1;
   text-align: center;
   line-height: 41px;
   font-size: 25px;
