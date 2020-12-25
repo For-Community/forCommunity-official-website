@@ -1,6 +1,9 @@
 import team1 from "../assets/team1.jpg";
-import team2 from "../assets/team2.jpg";
-import team3 from "../assets/team3.jpg";
+import team2 from "../assets/team2.jpeg";
+// import team3 from "../assets/team3.jpg";
+import team4 from "../assets/team4.jpeg";
+import team5 from "../assets/team5.jpeg";
+import team6 from "../assets/team6.jpeg";
 
 const TeamSectionData = [
   {
@@ -27,16 +30,52 @@ const TeamSectionData = [
       facebook: "https://facebook.com/justin.varghese42",
     },
   },
+  // {
+  //   id: "3",
+  //   name: "Abhijith S",
+  //   designation: "Django dev",
+  //   img: team3,
+  //   sociallinks: {
+  //     github: "https://github.com/masspher",
+  //     twitter: "https://twitter.com/abhijiths_2003?s=20",
+  //     linkedin: "https://www.linkedin.com/in/abhijith-s-bb8a24201",
+  //     facebook: "https://www.facebook.com/profile.php?id=100049296183097",
+  //   },
+  // },
   {
-    id: "3",
-    name: "Abhijith S",
-    designation: "Django dev",
-    img: team3,
+    id: "4",
+    name: "Akshay V Doizode",
+    designation: "ML Specialist",
+    img: team4,
     sociallinks: {
-      github: "https://github.com/masspher",
-      twitter: "https://twitter.com/abhijiths_2003?s=20",
-      linkedin: "https://www.linkedin.com/in/abhijith-s-bb8a24201",
-      facebook: "https://www.facebook.com/profile.php?id=100049296183097",
+      github: "https://github.com/akshayvdoizode",
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/akshay-v-doizode-074895b4/",
+      facebook: "",
+    },
+  },
+  {
+    id: "5",
+    name: "Kiran Sethumadhavan",
+    designation: "Python Dev",
+    img: team5,
+    sociallinks: {
+      github: "https://github.com/Kiran-Sethu46",
+      twitter: "https://twitter.com/Kiransethu001",
+      linkedin: "https://www.linkedin.com/in/kiran-sethumadhavan-42a00676/",
+      facebook: "https://www.facebook.com/kiran.sethu.1/",
+    },
+  },
+  {
+    id: "6",
+    name: "Vishakh",
+    designation: "Python Dev",
+    img: team6,
+    sociallinks: {
+      github: "https://github.com/vishakhg98",
+      twitter:"",
+      linkedin: "https://www.linkedin.com/in/g-vishakh/",
+      facebook: "https://www.facebook.com/G.vishakh/",
     },
   },
   {

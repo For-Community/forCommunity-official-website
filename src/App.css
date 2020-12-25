@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +25,7 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+/* NAVBAR CSS START */
 .header-logo {
   display: flex;
   align-items: center;
@@ -68,7 +70,9 @@ body {
   transition: 0.5s;
 }
 
-/* body Section Css */
+/* NAVBAR CSS END */
+
+/* BODY CSS START */
 .hero {
   display: flex;
   flex-direction: row;
@@ -92,6 +96,9 @@ body {
   color: whitesmoke;
 }
 
+/* BODY CSS END */
+
+/* ABOUT CSS START */
 .about {
   display: flex;
   justify-content: center;
@@ -115,6 +122,10 @@ body {
   font-size: 52px;
   letter-spacing: 5px;
 }
+
+/* ABOUT CSS END */
+
+/* TEAM CSS START */
 
 .team-section {
   /* fallback for old browsers */
@@ -178,7 +189,8 @@ body {
 
 .team-section .team-items .team-item img {
   display: block;
-  width: 100%;
+  width: 262px;
+  height: 330px;
   border-radius: 8px;
 }
 
@@ -243,21 +255,14 @@ body {
 .team-section .team-items .team-item .inner .info .social-links a:hover {
   box-shadow: 0 0 10px;
 }
+/* TEAM CSS END */
 
-/* Project section css starts */
+/* PROJECTS CSS START */
 
-.project-section{
-  background: #fc4a1a; 
-  background: -webkit-linear-gradient(
-    to right,
-    #f7b733,
-    #fc4a1a
-  ); 
-  background: linear-gradient(
-    to right,
-    #f7b733,
-    #fc4a1a
-  );
+.project-section {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
   padding: 70px 15px 30px;
   min-height: 100vh;
 }
@@ -267,10 +272,10 @@ body {
   margin: auto;
 }
 
-/* .project-row {
+.project-row {
   display: flex;
   flex-wrap: wrap;
-} */
+}
 
 .project-section .project-title {
   flex-basis: 100%;
@@ -306,7 +311,7 @@ body {
   padding: 10px;
 }
 
-.project-section .project-items .project-item img{
+.project-section .project-items .project-item img {
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -325,14 +330,14 @@ body {
   color: #818181;
 }
 
-.project-section .project-items .project-item .inner .info .social-links{
+.project-section .project-items .project-item .inner .info .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.project-section .project-items .project-item .inner .info .social-links a{
+.project-section .project-items .project-item .inner .info .social-links a {
   display: inline-block;
   height: 42px;
   width: 62px;
@@ -346,8 +351,38 @@ body {
   transition: all 0.5s ease;
 }
 
+.project-btn-btn1 {
+  background-color: #feac5e;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  outline-width: 0;
+  font-weight: 900;
+  padding: 15px 55px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: box-shadow .3s;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
 
-/* Project section css ends */
+.project-btn-btn1:hover{
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); 
+  background-color: #F66C29;
+  color: white;
+}
+
+.project-btn-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PROJECTS CSS END */
+
+/* CONTACT CSS START */
 .contact-section {
   background: #70e1f5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -463,6 +498,10 @@ body {
   transform: scale(1.6);
 }
 
+/* CONTACT CSS END */
+
+/* FOOTER CSS START */
+
 .footer-section {
   display: flex;
   align-items: center;
@@ -474,7 +513,7 @@ body {
   font-size: 20px;
 }
 
-.footer-section h5 a:hover{
+.footer-section h5 a:hover {
   cursor: pointer;
   color: white;
 }
@@ -483,6 +522,10 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* FOOTER CSS END */
+
+/* MEDIA QUERIES */
 
 @media (max-width: 991px) {
   .team-section .team-items .team-item {
@@ -493,6 +536,11 @@ body {
   .project-section .project-items .project-item {
     flex-basis: calc(50% - 30px);
     max-width: calc(50% - 30px);
+  }
+
+  .team-section .team-items .team-item img{
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -641,3 +689,5 @@ body {
   cursor: pointer;
 
     }
+/* MEDIA QUERIES END */
+

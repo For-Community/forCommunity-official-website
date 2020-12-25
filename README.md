@@ -1,3 +1,4 @@
+![Build and Deploy](https://github.com/For-Community/forCommunity-official-website/workflows/Build%20and%20Deploy/badge.svg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
