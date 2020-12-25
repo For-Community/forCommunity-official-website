@@ -44,7 +44,7 @@ const ProjectSectionData = [
     techstack: "MongoDB, Express, React JS, Node",
     links: {
       web: "https://protected-castle-62066.herokuapp.com/login",
-      git: "https://github.com/For-Community/Inventory-Management-System",
+      git: "https://github.com/For-Community/contactkeeper",
     },
   },
   {
@@ -56,7 +56,7 @@ const ProjectSectionData = [
     techstack: "MongoDB, Express, React JS, Node",
     links: {
       web: "https://weatherman.stephinreji.me/",
-      git: "https://github.com/For-Community/Inventory-Management-System",
+      git: "https://github.com/For-Community/WeatherMan",
     },
   },
   {
