@@ -42,13 +42,13 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className="btn-h">
+      <div className="project-btn-h">
         {visiblity < 10 ? (
-          <button className="btn-btn1" onClick={viewmore}>
+          <button className="project-btn-btn1" onClick={viewmore}>
             Show More
           </button>
         ) : (
-          <button className="btn-btn1" onClick={hide}>
+          <button className="project-btn-btn1" onClick={hide}>
             Show Less
           </button>
         )}

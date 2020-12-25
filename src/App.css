@@ -351,6 +351,34 @@ body {
   transition: all 0.5s ease;
 }
 
+.project-btn-btn1 {
+  background-color: #feac5e;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-weight: 900;
+  padding: 15px 55px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: box-shadow .3s;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-btn-btn1:hover{
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); 
+  background-color: #F66C29;
+  color: white;
+}
+
+.project-btn-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* PROJECTS CSS END */
 
 /* CONTACT CSS START */
@@ -508,6 +536,11 @@ body {
     flex-basis: calc(50% - 30px);
     max-width: calc(50% - 30px);
   }
+
+  .team-section .team-items .team-item img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 700px) {
@@ -626,21 +659,3 @@ body {
 }
 
 /* MEDIA QUERIES END */
-
-.btn-btn1 {
-  background-color: #aed9e0;
-  border: none;
-  color: white;
-  padding: 15px 55px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  outline-width: 0;
-  cursor: pointer;
-}
-
-.btn-h {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
