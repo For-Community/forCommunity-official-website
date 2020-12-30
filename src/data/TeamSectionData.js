@@ -5,6 +5,7 @@ import team4 from "../assets/team4.jpeg";
 import team5 from "../assets/team5.jpeg";
 import team6 from "../assets/team6.jpeg";
 import team7 from "../assets/team7.jpeg";
+import team8 from "../assets/team8.jpeg";
 
 const TeamSectionData = [
   {
@@ -74,7 +75,7 @@ const TeamSectionData = [
     img: team6,
     sociallinks: {
       github: "https://github.com/vishakhg98",
-      twitter:"",
+      twitter: "",
       linkedin: "https://www.linkedin.com/in/g-vishakh/",
       facebook: "https://www.facebook.com/G.vishakh/",
     },
@@ -89,6 +90,18 @@ const TeamSectionData = [
       twitter: "https://twitter.com/Vansh_Sehgal_18",
       linkedin: "https://www.linkedin.com/in/vansh-sehgal-1519391a8/",
       facebook: "https://www.facebook.com/vansh.sehgal.790",
+    },
+  },
+  {
+    id: "8",
+    name: "SIDHARTH E S",
+    designation: "Student",
+    img: team8,
+    sociallinks: {
+      github: " https://github.com/sid007es",
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/blackthunderszzz-srs-9821a8203/",
+      facebook: "",
     },
   },
 ];
