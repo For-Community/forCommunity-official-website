@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProjectSectionData from "../data/ProjectSectionData";
+import { db } from "../firebase";
 import ProjectCard from "./ProjectCard";
 
 function Project() {
@@ -15,9 +15,10 @@ function Project() {
   };
 
   useEffect(() => {
-    setProjectData(ProjectSectionData);
-    // console.log(ProjectSectionData);
-  }, []);
+    db.collection("projects").onSnapshot((snapshot) => {
+      setProjectData(snapshot.docs.map((doc) => doc.data()));
+    });
+  });
 
   return (
     <div className="project-section" id="project">
@@ -31,12 +32,12 @@ function Project() {
           <div class="project-items">
             {projectData.slice(0, visiblity).map((project) => (
               <ProjectCard
-                key={project.id}
-                img={project.imglink}
+                img={project.img}
                 title={project.title}
                 desc={project.desc}
                 designation={project.designation}
-                links={project.links}
+                web={project.web}
+                git={project.git}
               />
             ))}
           </div>
