@@ -6,6 +6,8 @@ function Project() {
   const [projectData, setProjectData] = useState([]);
   const [visiblity, setVisiblity] = useState(4);
 
+  const a = ProjectSectionData.length;
+
   const viewmore = () => {
     setVisiblity(visiblity + 4);
   };
@@ -43,7 +45,7 @@ function Project() {
         </div>
       </div>
       <div className="project-btn-h">
-        {visiblity < 8 ? (
+        {visiblity < a ? (
           <button className="project-btn-btn1" onClick={viewmore}>
             Show More
           </button>

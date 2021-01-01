@@ -1,36 +1,21 @@
 import React, { useState, useEffect } from "react";
-import TeamSectionData from "../data/TeamSectionData";
+import { db } from "../firebase";
 import TeamCard from "./TeamCard";
-let count = 4;
-let posts = [];
-let myData = [...TeamSectionData];
-let tempPosts = [...myData];
-
 function TeamSection() {
   const [teamMembers, setTeamMembers] = useState([]);
-  const [current] = useState(0);
-
-  const showMembersMore = (start, end) => {
-    const selectedPosts = myData.splice(start, end);
-    posts = [...posts, ...selectedPosts];
-    setTeamMembers(posts);
-  };
+  const [visiblity, setVisiblity] = useState(4);
 
   useEffect(() => {
-    showMembersMore(0, count);
+    db.collection("teams").onSnapshot((snapshot) => {
+      setTeamMembers(snapshot.docs.map((doc) => doc.data()));
+    });
   }, []);
 
-  const onClickMore = () => {
-    showMembersMore(current, count);
-  };
+  // console.log(teamMembers.length);
 
-  const onClickLess = () => {
-    myData = [...tempPosts];
-    console.log(tempPosts);
-    posts = [];
-    showMembersMore(current, count);
-  };
-
+  // console.log(teamMembers);
+  let a = teamMembers.length;
+  // console.log(teamMembers);
   return (
     <div className="team-section" id="community">
       <div class="team-container">
@@ -42,28 +27,36 @@ function TeamSection() {
         </div>
         <div class="team-row">
           <div class="team-items">
-            {teamMembers.map((team) => (
+            {teamMembers.slice(0, visiblity).map((team) => (
               <TeamCard
-                key={team.id}
-                img={team.img}
                 name={team.name}
+                img={team.img}
                 designation={team.designation}
-                sociallinks={team.sociallinks}
+                github={team.github}
+                linkedin={team.linkedin}
+                facebook={team.facebook}
+                twitter={team.twitter}
               />
             ))}
           </div>
         </div>
       </div>
       <div>
-        {myData.length > 0 ? (
+        {visiblity < a ? (
           <div class="button_cont" align="center">
-            <button class="team-btn" onClick={onClickMore}>
+            <button
+              className="project-btn-btn1"
+              onClick={() => setVisiblity(visiblity + 4)}
+            >
               Show More
             </button>
           </div>
         ) : (
           <div class="button_cont" align="center">
-            <button class="team-btn" onClick={onClickLess}>
+            <button
+              className="project-btn-btn1"
+              onClick={() => setVisiblity(visiblity - 4)}
+            >
               Show Less
             </button>
           </div>
