@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ProjectSectionData from "../data/ProjectSectionData";
+import { db } from "../firebase";
 import ProjectCard from "./ProjectCard";
 
 function Project() {
   const [projectData, setProjectData] = useState([]);
   const [visiblity, setVisiblity] = useState(4);
-
-  const a = ProjectSectionData.length;
 
   const viewmore = () => {
     setVisiblity(visiblity + 4);
@@ -17,9 +15,12 @@ function Project() {
   };
 
   useEffect(() => {
-    setProjectData(ProjectSectionData);
-    // console.log(ProjectSectionData);
+    db.collection("projects").onSnapshot((snapshot) => {
+      setProjectData(snapshot.docs.map((doc) => doc.data()));
+    });
   }, []);
+
+  const a = projectData.length;
 
   return (
     <div className="project-section" id="project">
@@ -33,12 +34,12 @@ function Project() {
           <div class="project-items">
             {projectData.slice(0, visiblity).map((project) => (
               <ProjectCard
-                key={project.id}
-                img={project.imglink}
+                img={project.img}
                 title={project.title}
                 desc={project.desc}
-                designation={project.designation}
-                links={project.links}
+                designation={project.techstatck}
+                web={project.web}
+                git={project.git}
               />
             ))}
           </div>
