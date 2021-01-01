@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 
-function ProjectCard({ title, img, desc, git, web }) {
+function ProjectCard({ title, img, desc, links}) {
   return (
     <Fragment>
       <div className="project-item">
@@ -11,21 +11,21 @@ function ProjectCard({ title, img, desc, git, web }) {
             <p>{desc}</p>
             <div className="social-links">
               <a
-                href={git}
+                href={links.git}
                 target="_blank"
                 rel="noreferrer"
                 style={{
-                  display: git !== "" ? "block" : "none",
+                  display: links.git !== "" ? "block" : "none",
                 }}
               >
                 <span class="fab fa-github"></span>
               </a>
               <a
-                href={web}
+                href={links.web}
                 target="_blank"
                 rel="noreferrer"
                 style={{
-                  display: web !== "" ? "block" : "none",
+                  display: links.web !== "" ? "block" : "none",
                 }}
               >
                 <span class="fa fa-chrome"></span>
