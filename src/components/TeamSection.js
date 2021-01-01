@@ -35,8 +35,9 @@ function TeamSection() {
                 img={team.img}
                 name={team.name}
                 designation={team.designation}
-                github={team.name}
+                github={team.github}
                 linkedin={team.linkedin}
+                facebook={team.facebook}
                 twitter={team.twitter}
               />
             ))}
