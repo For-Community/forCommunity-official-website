@@ -5,20 +5,17 @@ function TeamSection() {
   const [teamMembers, setTeamMembers] = useState([]);
   const [visiblity, setVisiblity] = useState(4);
 
-  const viewmore = () => {
-    setVisiblity(visiblity + 4);
-  };
-
-  const hide = () => {
-    setVisiblity(visiblity - 4);
-  };
-
   useEffect(() => {
     db.collection("teams").onSnapshot((snapshot) => {
       setTeamMembers(snapshot.docs.map((doc) => doc.data()));
     });
-  });
+  }, []);
 
+  // console.log(teamMembers.length);
+
+  // console.log(teamMembers);
+  let a = teamMembers.length;
+  // console.log(teamMembers);
   return (
     <div className="team-section" id="community">
       <div class="team-container">
@@ -32,8 +29,8 @@ function TeamSection() {
           <div class="team-items">
             {teamMembers.slice(0, visiblity).map((team) => (
               <TeamCard
-                img={team.img}
                 name={team.name}
+                img={team.img}
                 designation={team.designation}
                 github={team.github}
                 linkedin={team.linkedin}
@@ -45,19 +42,25 @@ function TeamSection() {
         </div>
       </div>
       <div>
-        {/* {visiblity > 1 ? (
+        {visiblity < a ? (
           <div class="button_cont" align="center">
-            <button class="team-btn" onClick={viewmore}>
+            <button
+              className="project-btn-btn1"
+              onClick={() => setVisiblity(visiblity + 4)}
+            >
               Show More
             </button>
           </div>
         ) : (
           <div class="button_cont" align="center">
-            <button class="team-btn" onClick={hide}>
+            <button
+              className="project-btn-btn1"
+              onClick={() => setVisiblity(visiblity - 4)}
+            >
               Show Less
             </button>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );

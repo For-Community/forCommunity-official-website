@@ -20,6 +20,7 @@ function Project() {
     });
   });
 
+  // console.log(projectData);
   return (
     <div className="project-section" id="project">
       <div class="project-container">
@@ -32,6 +33,7 @@ function Project() {
           <div class="project-items">
             {projectData.slice(0, visiblity).map((project) => (
               <ProjectCard
+                key={project.key}
                 img={project.img}
                 title={project.title}
                 desc={project.desc}
