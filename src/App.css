@@ -717,3 +717,29 @@ box-shadow: inset 25px 25px 51px #d15c23,
 
     }
 
+.languages li{
+  margin:20px 0;
+  list-style: none;
+}
+
+.bar{
+background: #649173;  
+  background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  
+  background: linear-gradient(to right, #DBD5A4, #649173); 
+  
+  display: block;
+  height: 15px;
+  border: 1px solid rgba(0,0,0,1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px #2187e7b3;
+}
+
+.bar span{
+  height: 15px;
+  float:left;
+  background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
