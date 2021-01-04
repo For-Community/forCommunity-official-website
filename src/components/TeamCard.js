@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import Loading from "./Loading";
 
 const TeamCard = ({
   name,
@@ -9,10 +10,16 @@ const TeamCard = ({
   linkedin,
   facebook,
 }) => {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Fragment>
       <div class="team-item">
-        <img src={img} alt="profile img" />
+        {loaded ? null : <Loading />}
+        <img
+          style={loaded ? {} : { display: "none" }}
+          src={img}
+          onLoad={() => setLoaded(true)}
+        />
         <div class="inner">
           <div class="info">
             <h5>{name}</h5>
