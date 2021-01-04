@@ -1,20 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
+import Loading from "./Loading";
 
 let githubClientId;
 let githubClientSecret;
 
-if (process.env.NODE_ENV !== "production") {
-  githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
-  githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
-} else {
-  githubClientId = process.env.GITHUB_CLIENT_ID;
-  githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
-}
+githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
 
 function ProjectCard({ title, img, desc, web, git }) {
   const [langInfo, setLangInfo] = useState({});
+  const [loaded, setLoaded] = useState(false);
+
+  console.log(process.env.REACT_APP_GITHUB_CLIENT_ID);
+  console.log(process.env.REACT_APP_GITHUB_CLIENT_SECRET);
 
   useEffect(() => {
     fetchLangs();
@@ -47,7 +47,15 @@ function ProjectCard({ title, img, desc, web, git }) {
   return (
     <Fragment>
       <div className="project-item">
-        <img src={img} alt="" className="image" style={{ width: "100%" }} />
+        {loaded ? null : <Loading />}
+        <img
+          src={img}
+          alt=""
+          className="image"
+          onLoad={() => setLoaded(true)}
+          style={loaded ? {} : { display: "block", width: "100%" }}
+        />
+
         <div className="inner">
           <div class="info">
             <h2>{title}</h2>
