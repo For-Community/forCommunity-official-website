@@ -17,7 +17,7 @@ const TeamCard = ({
         {loaded ? null : <Loading />}
         <img
           style={loaded ? {} : { display: "none" }}
-          src={img}
+          src={img} alt="loader"
           onLoad={() => setLoaded(true)}
         />
         <div class="inner">
