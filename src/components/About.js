@@ -6,7 +6,7 @@ function About() {
       <div className="about-text">
         <h3>About us</h3>
         <p>
-          We are a budding community of enthusiatic people belonging to
+          We are a budding community of enthusiastic people belonging to
           different tech stacks. Innovation, cooperation and quality form the
           base of our operations. We are always thrilled to have more members on
           board. The more the merrier right?
