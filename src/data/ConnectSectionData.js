@@ -13,7 +13,7 @@ const ConnectSectionData = [
   },
   {
     id: 3,
-    sociallink: "https://discord.gg/zRDZG3uM53",
+    sociallink: "https://discord.gg/QsAqC4yKkm",
     faclass: "fab fa-discord",
     sociallinktext: "Discord",
   },
