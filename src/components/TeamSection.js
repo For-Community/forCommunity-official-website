@@ -6,9 +6,11 @@ function TeamSection() {
   const [visiblity, setVisiblity] = useState(4);
 
   useEffect(() => {
-    db.collection("teams").onSnapshot((snapshot) => {
-      setTeamMembers(snapshot.docs.map((doc) => doc.data()));
-    });
+    db.collection("teams")
+      .orderBy("timestamp", "asc")
+      .onSnapshot((snapshot) => {
+        setTeamMembers(snapshot.docs.map((doc) => doc.data()));
+      });
   }, []);
 
   // console.log(teamMembers.length);
@@ -55,7 +57,7 @@ function TeamSection() {
           <div class="button_cont" align="center">
             <button
               className="project-btn-btn1"
-              onClick={() => setVisiblity(visiblity - 4)}
+              onClick={() => setVisiblity(visiblity - 8)}
             >
               Show Less
             </button>

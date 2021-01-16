@@ -11,13 +11,15 @@ function Project() {
   };
 
   const hide = () => {
-    setVisiblity(visiblity - 4);
+    setVisiblity(visiblity - 8);
   };
 
   useEffect(() => {
-    db.collection("projects").onSnapshot((snapshot) => {
-      setProjectData(snapshot.docs.map((doc) => doc.data()));
-    });
+    db.collection("projects")
+      .orderBy("timestamp", "asc")
+      .onSnapshot((snapshot) => {
+        setProjectData(snapshot.docs.map((doc) => doc.data()));
+      });
   }, []);
 
   const a = projectData.length;
