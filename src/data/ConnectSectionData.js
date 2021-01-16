@@ -23,6 +23,18 @@ const ConnectSectionData = [
     faclass: "fab fa-dev",
     sociallinktext: "Dev",
   },
+  {
+    id: 5,
+    sociallink: "https://www.facebook.com/forcommunity.tech",
+    faclass: "fab fa-facebook",
+    sociallinktext: "Facebook",
+  },
+  {
+    id: 6,
+    sociallink: "https://www.youtube.com/channel/UCP33irJmpa60rIuztDP2itQ",
+    faclass: "fab fa-youtube",
+    sociallinktext: "Youtube",
+  },
 ];
 
 export default ConnectSectionData;
