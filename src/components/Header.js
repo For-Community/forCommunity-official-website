@@ -2,9 +2,14 @@ import React from "react";
 
 import logo from "../assets/logo.png";
 
-const Header = () => {
+const Header = ({setDark, dark}) => {
   return (
     <div className="header">
+
+      <div className="wrapDark">
+      <button className = 'ColorButton' onClick = {() => setDark(prev => !prev)}>{dark ? <i class="fas fa-sun"></i>:<i class="fas fa-moon"></i>}</button>
+      </div>
+      
       <div className="header-logo">
         <img src={logo} alt="For Community Logo" />
         <h3>
