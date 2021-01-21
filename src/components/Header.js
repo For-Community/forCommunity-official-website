@@ -6,11 +6,9 @@ const Header = ({setDark, dark}) => {
   return (
     <div className="header">
 
-      <div className="wrapDark">
-      <button className = 'ColorButton' onClick = {() => setDark(prev => !prev)}>{dark ? <i class="fas fa-sun"></i>:<i class="fas fa-moon"></i>}</button>
-      </div>
-      
-      <div className="header-logo">
+    
+     <div className="wrapDark">
+     <div className="header-logo">
         <img src={logo} alt="For Community Logo" />
         <h3>
           For<span>Community</span>
@@ -22,7 +20,19 @@ const Header = ({setDark, dark}) => {
         <a href="#community">Community</a>
         <a href="#project">Projects</a>
         <a href="#connect">Connect</a>
+      
+     
       </div>
+
+      <button className = 'ColorButton' onClick = {() => setDark(prev => !prev)}>{dark ? <i class="fas fa-sun"></i>:<i class="fas fa-moon"></i>}</button>
+ 
+     
+       </div> 
+     
+
+ 
+   
+   
     </div>
   );
 };

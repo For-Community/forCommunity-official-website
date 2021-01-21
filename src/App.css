@@ -66,6 +66,7 @@ body {
   padding: 0px 10px;
 }
 
+
 .header-link > a:hover {
   color: rgb(255, 183, 0);
   transition: 0.5s;
@@ -547,6 +548,38 @@ box-shadow: inset 25px 25px 51px #d15c23,
   text-decoration: none;
   color: black;
 }
+/* DARK BUTTON */
+div.wrapDark {
+   
+  
+
+
+  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  button.ColorButton {
+ 
+
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    button.ColorButton:hover {
+     background-color: rgb(255, 183, 0);
+     
+    }
+  
+    button.ColorButton i {
+      font-size: 30px;
+    }
 
 /* FOOTER CSS END */
 
@@ -575,7 +608,14 @@ box-shadow: inset 25px 25px 51px #d15c23,
     width: 100%;
     height: auto;
   }
-  
+
+    button.ColorButton {
+    width: 40px;
+    height: 40px;
+      }
+      button.ColorButton i {
+        font-size: 20px;
+      }
 }
 
 @media (max-width: 700px) {
@@ -608,6 +648,18 @@ box-shadow: inset 25px 25px 51px #d15c23,
   .hero {
     flex-wrap: wrap;
   }
+  div.wrapDark {
+    width: 100%;
+      display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+      align-items: center;
+    }
+     button.ColorButton {
+       position: absolute;
+       right: 0;
+     }
+
 
   .hero-text {
     font-size: 55px;
@@ -662,6 +714,17 @@ box-shadow: inset 25px 25px 51px #d15c23,
     max-width: 400px;
     margin: 10px 0;
   }
+  button.ColorButton {
+    position: absolute;
+    border-radius: 0;
+    top: 0 ;
+    right: 0;
+    width: 40px;
+    height: 40px;
+      }
+      button.ColorButton i {
+        font-size: 20px;
+      }
 }
 
 @media (max-width: 460px) {
@@ -751,58 +814,3 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
 
 }
 /* Dark Button */
-@media(min-width: 360px) {
-  .wrapDark {
-    display: flex;
-    height: 100%;
-   
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  button.ColorButton {
- 
-  width: 30px;
-  height: 30px;
-
-    font-weight: bold;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    transition: 0.5s;
-    }
-    button.ColorButton:hover {
-     background-color: rgb(255, 183, 0);
-     
-    }
-  
-    button.ColorButton i {
-      font-size:17px;
-    }
-}
-@media(min-width: 991px) {
-  .wrapDark {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
-  button.ColorButton {
-  
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-    font-weight: bold;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    transition: 0.5s;
-    }
-    button.ColorButton:hover {
-     background-color: rgb(255, 183, 0);
-     
-    }
-  
-    button.ColorButton i {
-      font-size: 30px;
-    }
-}
