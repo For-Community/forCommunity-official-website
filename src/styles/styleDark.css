@@ -78,7 +78,7 @@
 }
 
 .dark .header-link > a {
-  color: #cfcfcf;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   padding: 0px 10px;
@@ -136,7 +136,7 @@
 }
 
 .dark .hero-text h4 span {
-  color: #cfcfcf;
+  color: white;
 }
 
 .dark .about {
@@ -156,7 +156,7 @@
 .dark .about-text {
   padding: 50px;
   text-align: center;
-  color: #cfcfcf;
+  color: white;
   font-size: 22px;
 }
 
@@ -204,7 +204,7 @@
   font-size: 53px;
   text-align: center;
   margin: 0;
-  color: #cfcfcf;
+  color: white;
 }
 
 .dark .team-section .team-title p {
@@ -273,7 +273,7 @@
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #cfcfcf;
+  color: white;
 }
 
 .dark .team-section .team-items .team-item .inner .info p {
@@ -374,7 +374,7 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-bottom: 40px;
-  background-color: #cfcfcf;
+  background-color: white;
   border-radius: 15px;
   padding: 10px;
 }
@@ -425,7 +425,7 @@
   font-size: 25px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #cfcfcf;
+  color: white;
 }
 
 .dark .project-btn-btn1 {
@@ -453,7 +453,7 @@
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   background-color: #cc7f59;
-  color: #cfcfcf;
+  color: white;
 }
 
 .dark .project-btn-h {
@@ -614,7 +614,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #e0730d;
+  background: #f0811a;
 }
 
 .dark .footer-section h5 {

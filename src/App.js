@@ -1,4 +1,4 @@
-import React, { Fragment, useState} from "react";
+import React, { Fragment, useState, useEffect} from "react";
 import "./styles/styleDark.css"
 import "./App.css";
 import Header from "./components/Header";
@@ -10,15 +10,35 @@ import Footer from "./components/Footer";
 import Project from "./components/Project";
 
 
+function useStickyState(defaultValue, key) {
+  const [value, setValue] = useState(() => {
+    const stickyValue = window.localStorage.getItem(key);
+    return stickyValue !== null
+      ? JSON.parse(stickyValue)
+      : defaultValue;
+  });
+ useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
+}
+
 
 
 function App() {
-  const [dark, setDark] = useState(false)
+const [dark, setDark] = useStickyState(false, "darkMode")
+useEffect(() => {
+
+  console.log(dark)
+})
+
+
   return (
+
   dark ?
   <div className = {dark ? "dark" : null}>
   <Fragment>
-  <Header setDark = {setDark} dark = {dark}/>
+  <Header dark = {dark} setDark = {setDark} />
   <Home />
   <About />
   <TeamSection />
@@ -30,7 +50,7 @@ function App() {
 :
 <Fragment>
 
-<Header setDark = {setDark}/>
+<Header dark = {dark} setDark = {setDark} />
 <Home />
 <About />
 <TeamSection />
@@ -41,5 +61,6 @@ function App() {
 </Fragment>
   );
 }
+
 
 export default App;

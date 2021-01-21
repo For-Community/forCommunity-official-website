@@ -8,6 +8,7 @@ const Header = ({setDark, dark}) => {
 
     
      <div className="wrapDark">
+       
      <div className="header-logo">
         <img src={logo} alt="For Community Logo" />
         <h3>
@@ -24,7 +25,7 @@ const Header = ({setDark, dark}) => {
      
       </div>
 
-      <button className = 'ColorButton' onClick = {() => setDark(prev => !prev)}>{dark ? <i class="fas fa-sun"></i>:<i class="fas fa-moon"></i>}</button>
+      <button className = 'ColorButton' onClick = {() => setDark(dark = !dark)}>{dark ? <i class="fas fa-sun"></i>:<i class="fas fa-moon"></i>}</button>
  
      
        </div> 
