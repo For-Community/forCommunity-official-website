@@ -2,10 +2,14 @@ import React from "react";
 
 import logo from "../assets/logo.png";
 
-const Header = () => {
+const Header = ({setDark, dark}) => {
   return (
     <div className="header">
-      <div className="header-logo">
+
+    
+     <div className="wrapDark">
+       
+     <div className="header-logo">
         <img src={logo} alt="For Community Logo" />
         <h3>
           For<span>Community</span>
@@ -17,7 +21,19 @@ const Header = () => {
         <a href="#community">Community</a>
         <a href="#project">Projects</a>
         <a href="#connect">Connect</a>
+      
+     
       </div>
+
+      <button className = 'ColorButton' onClick = {() => setDark(dark = !dark)}>{dark ? <i class="fas fa-sun"></i>:<i class="fas fa-moon"></i>}</button>
+ 
+     
+       </div> 
+     
+
+ 
+   
+   
     </div>
   );
 };

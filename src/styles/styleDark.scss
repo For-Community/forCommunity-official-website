@@ -1,0 +1,808 @@
+$primaryPurple: #44152f; 
+$darkerWhite: rgb(255, 255, 255);
+
+.dark {
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+  
+  $secondaryPurple: #611e43;
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* NAVBAR CSS START */
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo img {
+    height: 110px;
+    width: 130px;
+  }
+  
+  .header-logo > h3 {
+    font-size: 36px;
+    color: rgb(218, 175, 66);
+  }
+  
+  .header-logo h3 span {
+    color: azure;
+  }
+  
+  .header {
+    background-color: $primaryPurple;
+    color: white;
+    display: flex;
+    padding: 0.7rem 2rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+   
+  }
+  
+  .header-link > a {
+    color: $darkerWhite;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 10px;
+  }
+  
+  
+  .header-link > a:hover {
+    color: rgb(255, 183, 0);
+    transition: 0.5s;
+  }
+  
+  /* NAVBAR CSS END */
+  
+  /* BODY CSS START */
+  .counter{
+    position: absolute;
+    top: 100px;
+    color: #641540;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0px 25px ;
+    border: none;
+    border-radius: 20px;
+  background: linear-gradient(
+      145deg,
+      rgb(201, 107, 0),
+      rgb(189, 0, 0));
+  box-shadow:  25px 25px 51px #772b2b, 
+               -25px -25px 51px #853535;
+  }
+  
+  .counter:hover{
+    border-radius: 20px;
+  background: #3a1a0a;
+
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom right,
+      $primaryPurple,
+      rgb(255, 60, 60)
+    );
+  }
+  
+  .hero-text {
+    font-size: 56px;
+    margin-left: 0px;
+    font-family: Bebas Neue;
+  }
+  
+  .hero-text h4 span {
+    color: $darkerWhite;
+  }
+  
+  /* BODY CSS END */
+  
+  /* ABOUT CSS START */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom left,
+      #008059,
+      rgb(0, 89, 214)
+    );
+  }
+  
+  .about-text {
+    padding: 50px;
+    text-align: center;
+    color: $darkerWhite;
+    font-size: 22px;
+  }
+  
+  .about h3 {
+    font-family: Bebas Neue;
+    font-size: 52px;
+    letter-spacing: 5px;
+  }
+  
+  /* ABOUT CSS END */
+  
+  /* TEAM CSS START */
+  
+  .team-section {
+    background: #3a7c4b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #306e40, #a17fe0, #5d26c1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #337c45, #a17fe0, #5d26c1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 70px 15px 30px;
+    min-height: 100vh;
+  }
+  
+  .team-container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .team-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .team-section .team-title {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+  
+  .team-section .team-title h1 {
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 5px;
+    font-size: 53px;
+    text-align: center;
+    margin: 0;
+    color: $darkerWhite;
+  }
+  
+  .team-section .team-title p {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    margin: 15px 0 0;
+  }
+  
+  .team-section .team-items {
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .team-section .team-items .team-item {
+    flex-basis: calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    transition: all 0.5s ease;
+    margin-bottom: 40px;
+  }
+  
+  .team-section .team-items .team-item img {
+    display: block;
+    width: 262px;
+    height: 330px;
+    border-radius: 8px;
+  }
+  
+  .team-section .team-items .team-item .inner {
+    position: relative;
+    z-index: 11;
+    padding: 0 15px;
+  }
+  
+  .team-section .team-items .team-item .inner .info {
+    background-color: $secondaryPurple;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    margin-top: -40px;
+  }
+  
+  .team-section .team-items .team-item:hover .info {
+    transform: translateY(-20px);
+  }
+  
+  .team-section .team-items .team-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .team-section .team-items .team-item .inner .info h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: $darkerWhite;
+  }
+  
+  .team-section .team-items .team-item .inner .info p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #b6b6b6;
+  }
+  
+  .team-section .team-items .team-item .inner .info .social-links {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-section .team-items .team-item .inner .info .social-links a {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    color: #a3246a;
+    border-radius: 50%;
+    margin: 0 2px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+  }
+  
+  .team-section .team-items .team-item .inner .info .social-links a:hover {
+    box-shadow: 0 0 10px;
+  }
+  /* TEAM CSS END */
+  
+  /* PROJECTS CSS START */
+  
+  .project-section {
+    background: #dd3000;
+    background: -webkit-linear-gradient(to right, #ffaa00, #ff3700);
+    background: linear-gradient(to right, #d89000, #c42b00);
+    padding: 70px 15px 30px;
+    min-height: 100vh;
+  }
+  
+  .project-container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .project-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-section .project-title {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+  
+  .project-section .project-title h1 {
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 5px;
+    font-size: 53px;
+    text-align: center;
+    margin: 0;
+    color: rgb(231, 231, 231);
+  }
+  
+  .project-section .project-items {
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project-section .project-items .project-item {
+    flex-basis: calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    transition: all 0.5s ease;
+    margin-bottom: 40px;
+    background-color: $darkerWhite;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .project-section .project-items .project-item img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project-section .project-items .project-item .inner .info h2 {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .project-section .project-items .project-item .inner .info p {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #313131;
+  }
+  
+  .project-section .project-items .project-item .inner .info .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .project-section .project-items .project-item .inner .info .social-links a {
+    display: inline-block;
+    background-color: $secondaryPurple;
+    color: #000;
+    border-radius: 10px;
+    margin: 2px;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 41px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+    color: $darkerWhite;
+  }
+  
+  .project-btn-btn1 {
+    background-color: #da7f2a;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    outline-width: 0;
+    font-weight: 900;
+    padding: 15px 55px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: box-shadow .3s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-btn-btn1:hover{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); 
+    background-color: #cc7f59;
+    color:$darkerWhite;
+  }
+  
+  .project-btn-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* PROJECTS CSS END */
+  
+  /* CONTACT CSS START */
+  .contact-section {
+    background: #70e1f5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #9b9b9b,
+      #336d77
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #c7c7c7,
+      #1d7585
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 70px 15px 30px;
+    min-height: 75vh;
+  }
+  
+  .contact-container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-section .contact-title {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+  
+  .contact-section .contact-title h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+  }
+  .contact-section .contact-title p {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    margin: 15px 0 0;
+  }
+  
+  .social-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .social-card {
+    background-color: rgb(236, 225, 211);
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .social-card p {
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .social-card:hover p {
+    max-height: 30px;
+    opacity: 1;
+  }
+  
+  .social-card-icon {
+    font-size: 28px;
+    background: -webkit-linear-gradient(
+      to right,
+      #feac5e,
+      #c779d0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #feac5e, #c779d0);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  /*  */
+  .social-card a {
+    color: black;
+  }
+  
+  .social-card:hover .social-card-icon {
+    background: none;
+    color: #832e52;
+    transform: scale(1.6);
+  }
+  
+  /* CONTACT CSS END */
+  
+  /* FOOTER CSS START */
+  
+  .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0811a;
+  }
+  
+  .footer-section h5 {
+    font-size: 20px;
+  }
+  
+  .footer-section h5 a:hover {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .footer-section > h5 > a {
+    text-decoration: none;
+    color: black;
+  }
+  /* DARK BUTTON */
+  div.wrapDark {
+     
+    
+  
+  
+    width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    button.ColorButton {
+   
+  
+  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+      font-weight: bold;
+      border: none;
+      background-color:rgb(36, 36, 36);
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+      }
+      button.ColorButton:hover {
+       background-color: $secondaryPurple;
+       
+      }
+    
+      button.ColorButton i {
+        font-size: 30px;
+      }
+  
+  /* FOOTER CSS END */
+  
+  /* MEDIA QUERIES */
+  
+  @media (max-width: 991px) {
+    
+    .counter{
+    position: absolute;
+    top: 150px;
+    padding: 0px 20px;
+    font-size: 13px;
+    }
+  
+    .team-section .team-items .team-item {
+      flex-basis: calc(50% - 30px);
+      max-width: calc(50% - 30px);
+    }
+  
+    .project-section .project-items .project-item {
+      flex-basis: calc(50% - 30px);
+      max-width: calc(50% - 30px);
+    }
+  
+    .team-section .team-items .team-item img{
+      width: 100%;
+      height: auto;
+    }
+  
+      button.ColorButton {
+      width: 40px;
+      height: 40px;
+        }
+        button.ColorButton i {
+          font-size: 20px;
+        }
+  }
+  
+  @media (max-width: 700px) {
+    .header {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      
+      height: 120px;
+    }
+  
+    .header-logo {
+      justify-content: center;
+      margin-left: -29px;
+    }
+  
+    .header-logo > h3 {
+      font-size: 26px;
+    }
+  
+    .header-logo img {
+      width: 100px;
+      height: 95px;
+    }
+  
+    .header-link a {
+      justify-content: center;
+    }
+  
+    .hero {
+      flex-wrap: wrap;
+    }
+    div.wrapDark {
+      width: 100%;
+        display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+        align-items: center;
+      }
+       button.ColorButton {
+         position: absolute;
+         right: 0;
+       }
+  
+  
+    .hero-text {
+      font-size: 55px;
+      text-align: center;
+      margin: auto;
+    }
+  
+    .hero-image img {
+      height: 300px;
+      width: 350px;
+      margin-top: -100px;
+    }
+  
+    .hero-flex {
+      flex-basis: 50%;
+    }
+  
+    .about {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        to bottom left,
+        #07b17e,
+        rgba(0, 106, 255, 1)
+      );
+    }
+  
+    .about-text {
+      padding: 50px;
+      text-align: center;
+      color: white;
+    }
+  
+    .team-section .team-items .team-item {
+      flex-basis: calc(100%);
+      max-width: calc(100%);
+    }
+  
+    .project-section .project-items .project-item {
+      flex-basis: calc(100%);
+      max-width: calc(100%);
+    }
+  
+    .social-info {
+      flex-direction: column;
+    }
+  
+    .social-card {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+    }
+    button.ColorButton {
+      position: absolute;
+      border-radius: 0;
+      top: 0 ;
+      right: 0;
+      width: 40px;
+      height: 40px;
+        }
+        button.ColorButton i {
+          font-size: 20px;
+        }
+  }
+  
+  @media (max-width: 460px) {
+    .header-link {
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
+  
+  @media (max-width: 360px) {
+    .header-link {
+      font-size: 12px;
+    }
+  
+    .hero-image img {
+      height: 230px;
+      width: 260px;
+      margin-top: -90px;
+    }
+  
+    .social-card {
+      width: 100%;
+      max-width: 300px;
+    }
+    .project {
+      padding: 20px;
+      background: linear-gradient(to right, #feac5e, #70e1f5);
+    }
+  
+    
+  }
+  
+  /* MEDIA QUERIES END */
+  
+  .team-btn {
+    border: none;
+    background: #FAAB5F;
+    color: black;
+    font-weight: 900;
+    padding:60px;
+    outline-width: 0;
+    padding: 15px 55px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  
+  }
+  
+    .team-btn:hover {
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); 
+    background-color: #E0899C;
+    color: white;
+  
+      }
+  
+  .languages li{
+    margin:20px 0;
+    list-style: none;
+  }
+  
+  .bar{
+  background: #649173;  
+    background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  
+    background: linear-gradient(to right, #DBD5A4, #649173); 
+    
+    display: block;
+    height: 15px;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #2187e7b3;
+  }
+  
+  .bar span{
+    height: 15px;
+    float:left;
+    background: #870000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  /* Dark Button */
+  
+  }
